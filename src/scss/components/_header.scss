@@ -18,6 +18,12 @@
     }
     &-link{
       padding: 10px;
+      border-bottom: 1px solid transparent;
+      width: 0;
+      &:hover{
+        color: var(--orange);
+        border-bottom: 1px solid var(--orange);
+      }
     }
     &-item:nth-child(2){
       @media(max-width:424px){
@@ -38,6 +44,10 @@
     border: 1px solid var(--white);
     padding: 20px;
     background-color: var(--black);
+    &:hover{
+      color: var(--orange);
+      border: 1px solid var(--orange);
+    }
     @media(max-width:767px){
       border: unset;
       background-color: transparent;
