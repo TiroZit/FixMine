@@ -1,0 +1,31 @@
+extends components/_base
+include components/_mixins
+block vars
+	- var lang = 'ru'
+	- var type = 'website'
+	- var title = 'FixMine'
+	- var description = 'Описание'
+	- var siteName = 'FixMine'
+	- var keywords = 'fix mine фикс майнкрафт донат сайт сервер майн'
+	- var url = ''
+	- var imageLogo = ''
+	- var typeImage = 'image/webp'
+	- var widthImage = '400'
+	- var heightImage = '300'
+	- var favicon = 'img/logo.webp'
+	- var font = 'fonts/MusticaproSemibold.woff2'
+	- var light = '#000'
+	- var dark = '#000'
+block content
+	._wrapper
+		.background-left
+		include components/_header
+		main.main
+			include components/project
+			.mask-man
+			include components/welcome
+			.background-right
+			include components/resources
+			.background-left-bottom
+		include components/_footer
+	include components/_scripts

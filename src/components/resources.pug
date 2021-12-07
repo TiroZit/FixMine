@@ -1,0 +1,16 @@
+section.resources 
+  .resources__container
+    img.resources__man(src="img/resources-man.webp", alt="Наши ресурсы")
+    h2.resources__title(data-text="Наши ресурсы")
+      | Наши ресурсы
+    .resources__items 
+      a.resources__item(href='https://vk.com/fixmine_ru' target='_blank')
+        +svg('vk', '50', '50', 'currentColor')
+        .resources__item-block 
+          .resources__item-title Официальное сообщество
+          .resources__item-subtitle Самые важный новости и обновления
+      a.resources__item(href='http://disc.fixmine.ru/' target='_blank')
+        +svg('discord', '50', '50', 'currentColor')
+        .resources__item-block 
+          .resources__item-title Мы в Discord
+          .resources__item-subtitle Для желающих играть в компании
