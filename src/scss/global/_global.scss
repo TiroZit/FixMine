@@ -28,6 +28,15 @@ a{
   position: relative;
   flex: 1 1 auto;
 }
+.main.lk{
+  &>.project{
+    margin: 0;
+  }
+  &>.project>.project__container>.project__title,
+  &>.project>.project__container>.project__block{
+    display: none;
+  }
+}
 [class*=__container]{
   position: relative;
   @include container("1020px", "10px");
