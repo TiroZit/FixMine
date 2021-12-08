@@ -1,9 +1,9 @@
-section.donate 
+section.donate(id='tab-header-1')
   .donate__container 
     .donate__title-block 
       .o-block.donate__block 
       h2.donate__title Покупка привилегий
-    .donate__items 
+    .donate__items(id='tab-footer-1')
       a.donate__item 
         .donate__item-price 1000₽
         .donate__item-content 
@@ -28,6 +28,7 @@ section.donate
             .donate__item-title Helper 
           .donate__item-cart 
             +svg('cart', '30', '30', '', '#000')
+    .donate__items(id='tab-footer-2')
       a.donate__item 
         .donate__item-price 1000₽
         .donate__item-content 
@@ -44,6 +45,7 @@ section.donate
             .donate__item-title Helper 
           .donate__item-cart 
             +svg('cart', '30', '30', '', '#000')
+    .donate__items(id='tab-footer-3')
       a.donate__item 
         .donate__item-price 1000₽
         .donate__item-content 
@@ -52,6 +54,12 @@ section.donate
             .donate__item-title Helper 
           .donate__item-cart 
             +svg('cart', '30', '30', '', '#000')
+section.donate(id='tab-header-2')
+  .donate__container 
+    .donate__title-block 
+      .o-block.donate__block 
+      h2.donate__title Покупка валюты и кейсов
+    .donate__items(id='tab-footer-1')
       a.donate__item 
         .donate__item-price 1000₽
         .donate__item-content 
@@ -60,27 +68,5 @@ section.donate
             .donate__item-title Helper 
           .donate__item-cart 
             +svg('cart', '30', '30', '', '#000')
-      a.donate__item 
-        .donate__item-price 1000₽
-        .donate__item-content 
-          .donate__item-image 
-            img(src="img/donate/helper.webp", alt="Helper")
-            .donate__item-title Helper 
-          .donate__item-cart 
-            +svg('cart', '30', '30', '', '#000')
-      a.donate__item 
-        .donate__item-price 1000₽
-        .donate__item-content 
-          .donate__item-image 
-            img(src="img/donate/helper.webp", alt="Helper")
-            .donate__item-title Helper 
-          .donate__item-cart 
-            +svg('cart', '30', '30', '', '#000')
-      a.donate__item 
-        .donate__item-price 1000₽
-        .donate__item-content 
-          .donate__item-image 
-            img(src="img/donate/helper.webp", alt="Helper")
-            .donate__item-title Helper 
-          .donate__item-cart 
-            +svg('cart', '30', '30', '', '#000')
+    .donate__items(id='tab-footer-2')
+    .donate__items(id='tab-footer-3')
