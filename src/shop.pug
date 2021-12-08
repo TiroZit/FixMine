@@ -3,12 +3,12 @@ include components/_mixins
 block vars
 	- var lang = 'ru'
 	- var type = 'website'
-	- var title = 'FixMine | Главная'
+	- var title = 'FixMine | Магазин'
 	- var description = 'Описание'
-	- var siteName = 'FixMine | Главная'
+	- var siteName = 'FixMine'
 	- var keywords = 'fix mine фикс майнкрафт донат сайт сервер майн'
 	- var url = ''
-	- var imageLogo = ''
+	- var imageLogo = 'img/logo.webp'
 	- var typeImage = 'image/webp'
 	- var widthImage = '400'
 	- var heightImage = '300'
@@ -22,10 +22,7 @@ block content
 		include components/_header
 		main.main
 			include components/project
-			.mask-man
-			include components/welcome
 			.background-right
-			include components/resources
 			.background-left-bottom
 		include components/_footer
 	include components/_scripts
