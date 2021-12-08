@@ -5,7 +5,7 @@ document.querySelectorAll('.tabs__header-link').forEach((item) =>
 
     document.querySelectorAll('.tabs__header-link').forEach((child) => child.classList.remove('active')
     );
-    document.querySelectorAll('.donate.active').forEach((child) => child.classList.remove('active')
+    document.querySelectorAll('.donate').forEach((child) => child.classList.remove('active')
     );
     item.classList.add('active');
     document.getElementById(id).classList.add('active');

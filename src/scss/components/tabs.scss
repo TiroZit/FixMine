@@ -66,13 +66,13 @@
   }
   // .tabs__footer
   &__footer {
-    display: flex;
-    margin: 20px 20px 0 20px;
-    color: #74726f;
-    justify-content: flex-end;
   }
   // .tabs__footer-items
   &__footer-items {
+    display: flex;
+    margin: 0 20px 20px 20px;
+    color: #74726f;
+    justify-content: flex-end;
     display: flex;
     align-items: center;
     gap: 10px;
