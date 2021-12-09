@@ -1,4 +1,5 @@
-document.querySelectorAll('.tabs__footer-link').forEach((item) =>
+if(document.querySelector('.tabs__footer-link')){
+  document.querySelectorAll('.tabs__footer-link').forEach((item) =>
   item.addEventListener('click', function (e) {
     e.preventDefault();
     const id = e.target.getAttribute('href').replace('#', '');
@@ -10,5 +11,6 @@ document.querySelectorAll('.tabs__footer-link').forEach((item) =>
     item.classList.add('active');
     document.getElementById(id).classList.add('active');
   })
-);
-document.querySelector('.tabs__footer-link').click();
+  );
+  document.querySelector('.tabs__footer-link').click();
+}
