@@ -84,6 +84,7 @@ a{
   width: 974px;
   height: 980px;
   background: url(../img/mask-man.webp) center no-repeat;
+  pointer-events: none;
   @media(max-width:992px){
     display: none;
   }

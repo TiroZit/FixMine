@@ -1,0 +1,28 @@
+.payment{
+  margin-top: 100px;
+  min-height: 1000px;
+  @media(max-width: 767px){
+    min-height: unset;
+    margin-top: 50px;
+  }
+  &__container{
+    max-width: 600px;
+  }
+  &__title{
+    margin-left: 20px;
+    margin-bottom: 30px;
+  }
+  &__items{
+    display: grid;
+    grid-template-columns: repeat(auto-fill,minmax(150px,1fr));
+    gap: 30px;
+  }
+  &__item{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgba($color: #212121, $alpha: 0.5);
+    border-radius: var(--bradius);
+    padding: 20px;
+  }
+}
