@@ -10,7 +10,7 @@
     justify-content: space-between;
     align-items: center;
     gap: 20px;
-    border-radius: 15px;
+    border-radius: var(--bradius);
     background-color: rgba($color: #000000, $alpha: 0.5);
     padding: 20px;
     @media(max-width: 767px){
@@ -30,7 +30,7 @@
     align-items: center;
     justify-content: center;
     background-color: var(--orange);
-    border-radius: 15px;
+    border-radius: var(--bradius);
     width: 55px;
     height: 55px;
     margin-right: 20px;
@@ -43,7 +43,7 @@
     display: flex;
     align-items: center;
     overflow: scroll;
-    border-radius: 15px;
+    border-radius: var(--bradius);
     color: var(--black);
     background-color: var(--white);
     &::-webkit-scrollbar{
@@ -60,7 +60,7 @@
     padding: 20px;
     &.active{
       color: var(--white);
-      border-radius: 15px;
+      border-radius: var(--bradius);
       background-color: var(--orange);
     }
   }

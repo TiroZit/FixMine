@@ -56,7 +56,7 @@
   &__item-price {
     color: var(--black);
     padding: 10px 30px;
-    border-radius: 15px;
+    border-radius: var(--bradius);
     width: fit-content;
     background-color: var(--white);
     margin-bottom: 10px;
@@ -90,7 +90,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    border-radius: 15px;
+    border-radius: var(--bradius);
     background-color: var(--white);
   }
 }
@@ -130,7 +130,7 @@
     font-size: rem(18);
     gap: 30px;
     background-color: rgba($color: #000, $alpha: 0.5);
-    border-radius: 15px;
+    border-radius: var(--bradius);
     &-subtitle{
       font-size: rem(16);
       color: #8a8a8a;
@@ -150,7 +150,7 @@
       background-color: var(--orange);
       padding: 20px 30px;
       text-transform: uppercase;
-      border-radius: 15px;
+      border-radius: var(--bradius);
       &-block{
         display: flex;
         justify-content: center;

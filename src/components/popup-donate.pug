@@ -1,0 +1,16 @@
+.popup-d#popup-donate
+  .popup-d__body 
+    .popup-d__content 
+      button.popup-d__close.close-popup
+        +svg('close', '25', '20', 'currentColor')
+      form.popup-d__form(action="#")
+        .popup-d__title
+          |Оплата товара 
+          br
+          |"
+          span Helper
+          |"
+        fieldset.popup-d__fieldset
+          input.popup-d__input(name="nickname" type="text" placeholder="Никнейм" required)
+          input.popup-d__input(name="promo" type="text" placeholder="Промокод")
+        button.popup-d__btn(type="submit") Оплатить
