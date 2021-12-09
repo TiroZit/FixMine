@@ -9,6 +9,9 @@
     height: auto;
     min-height: 900px;
     margin-top: 20px;
+    @media(max-width: 767px){
+      min-height: unset;
+    }
   }
   // .donate__container
   &__container {
