@@ -89,11 +89,13 @@
   }
   // .tabs__footer-link
   &__footer-link {
+    display: inline;
     padding: 5px 0;
     border-bottom: 3px solid transparent;
     transition: all .3s;
     font-size: rem(16);
     background: transparent;
+    width: max-content;
     &[aria-selected="true"]{
       border-bottom: 3px solid var(--orange);
     }
