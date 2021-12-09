@@ -1,17 +1,8 @@
 .donate {
-  transition: all .3s;
-  overflow: hidden;
-  opacity: 0;
-  height: 0;
-  &.active{
-    overflow: visible;
-    opacity: 1;
-    height: auto;
-    min-height: 900px;
-    margin-top: 20px;
-    @media(max-width: 767px){
-      min-height: unset;
-    }
+  min-height: 900px;
+  margin-top: 20px;
+  @media(max-width: 767px){
+    min-height: unset;
   }
   // .donate__container
   &__container {
@@ -31,22 +22,23 @@
   }
   // .donate__items
   &__items {
-    transition: all .3s;
-    overflow: hidden;
-    opacity: 0;
-    height: 0;
     display: grid;
+    transition: opacity .3s;
+    opacity: 1;
+    visibility: visible;
+    height: auto;
     grid-template-columns: repeat(auto-fill,minmax(260px,1fr));
     grid-template-rows: repeat(auto-fill,minmax(221px,1fr));
     gap: 20px;
     font-size: rem(20);
-    &.active{
-      overflow: visible;
-      opacity: 1;
-      height: auto;
-      min-height: 900px;
-      margin-top: 50px;
-      }
+    margin-top: 50px;
+    &[hidden]{
+      opacity: 0;
+      visibility: hidden;
+      height: 0;
+      margin: 0;
+      overflow: hidden;
+    }
   }
   // .donate__item
   &__item {
@@ -96,8 +88,6 @@
     border-radius: var(--bradius);
     background-color: var(--white);
   }
-}
-.o-block {
 }
 .goods{
   &__range-block{

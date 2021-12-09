@@ -1,101 +1,142 @@
-section.donate(id='tab-header-1')
-  .donate__container 
-    nav.tabs__footer-items 
-      .tabs__footer-item
-        a.tabs__footer-link(href='#tab-footer-1') Выживание
-      .tabs__footer-item
-        a.tabs__footer-link(href='#tab-footer-2') Один Блок
-      .tabs__footer-item
-        a.tabs__footer-link(href='#tab-footer-3') БедВарс
+section.donate(data-panes)
+  .donate__container
+    nav.tabs__footer-items(data-tabs)
+      button.tabs__footer-link Выживание
+      button.tabs__footer-link Один Блок
+      button.tabs__footer-link БедВарс
     .donate__title-block 
       .o-block.donate__block 
       h2.donate__title Покупка привилегий
-    .donate__items(id='tab-footer-1')
-      a.donate__item(data-path="donate") 
-        .donate__item-price 1000₽
-        .donate__item-content 
-          .donate__item-image 
-            img(src="img/donate/helper.webp", alt="Helper")
-            .donate__item-title Helper 
-          .donate__item-cart 
-            +svg('cart', '30', '30', '', '#000')
-      a.donate__item(data-path="donate") 
-        .donate__item-price 1000₽
-        .donate__item-content 
-          .donate__item-image 
-            img(src="img/donate/helper.webp", alt="Helper")
-            .donate__item-title Helper 
-          .donate__item-cart 
-            +svg('cart', '30', '30', '', '#000')
-      a.donate__item(data-path="donate") 
-        .donate__item-price 1000₽
-        .donate__item-content 
-          .donate__item-image 
-            img(src="img/donate/helper.webp", alt="Helper")
-            .donate__item-title Helper 
-          .donate__item-cart 
-            +svg('cart', '30', '30', '', '#000')
-    .donate__items(id='tab-footer-2')
-      a.donate__item
-        .donate__item-price 1000₽
-        .donate__item-content 
-          .donate__item-image 
-            img(src="img/donate/helper.webp", alt="Helper")
-            .donate__item-title Helper 
-          .donate__item-cart 
-            +svg('cart', '30', '30', '', '#000')
-      a.donate__item 
-        .donate__item-price 1000₽
-        .donate__item-content 
-          .donate__item-image 
-            img(src="img/donate/helper.webp", alt="Helper")
-            .donate__item-title Helper 
-          .donate__item-cart 
-            +svg('cart', '30', '30', '', '#000')
-    .donate__items(id='tab-footer-3')
-      a.donate__item 
-        .donate__item-price 1000₽
-        .donate__item-content 
-          .donate__item-image 
-            img(src="img/donate/helper.webp", alt="Helper")
-            .donate__item-title Helper 
-          .donate__item-cart 
-            +svg('cart', '30', '30', '', '#000')
-section.donate(id='tab-header-2')
-  .donate__container 
-    nav.tabs__footer-items 
-      .tabs__footer-item
-        a.tabs__footer-link(href='#tab-footer-4') Выживание
-      .tabs__footer-item
-        a.tabs__footer-link(href='#tab-footer-5') Один Блок
-      .tabs__footer-item
-        a.tabs__footer-link(href='#tab-footer-6') БедВарс
+    .donate__wrapper(data-panes)
+      .donate__items
+        a.donate__item(data-path="donate") 
+          .donate__item-price 1000₽
+          .donate__item-content 
+            .donate__item-image 
+              img(src="img/donate/helper.webp", alt="Helper")
+              .donate__item-title Helper 
+            .donate__item-cart 
+              +svg('cart', '30', '30', '', '#000')
+        a.donate__item(data-path="donate") 
+          .donate__item-price 1000₽
+          .donate__item-content 
+            .donate__item-image 
+              img(src="img/donate/helper.webp", alt="Helper")
+              .donate__item-title Helper 
+            .donate__item-cart 
+              +svg('cart', '30', '30', '', '#000')
+        a.donate__item(data-path="donate") 
+          .donate__item-price 1000₽
+          .donate__item-content 
+            .donate__item-image 
+              img(src="img/donate/helper.webp", alt="Helper")
+              .donate__item-title Helper 
+            .donate__item-cart 
+              +svg('cart', '30', '30', '', '#000')
+      .donate__items
+        a.donate__item
+          .donate__item-price 1000₽
+          .donate__item-content 
+            .donate__item-image 
+              img(src="img/donate/helper.webp", alt="Helper")
+              .donate__item-title Helper 
+            .donate__item-cart 
+              +svg('cart', '30', '30', '', '#000')
+        a.donate__item 
+          .donate__item-price 1000₽
+          .donate__item-content 
+            .donate__item-image 
+              img(src="img/donate/helper.webp", alt="Helper")
+              .donate__item-title Helper 
+            .donate__item-cart 
+              +svg('cart', '30', '30', '', '#000')
+      .donate__items
+        a.donate__item 
+          .donate__item-price 1000₽
+          .donate__item-content 
+            .donate__item-image 
+              img(src="img/donate/helper.webp", alt="Helper")
+              .donate__item-title Helper 
+            .donate__item-cart 
+              +svg('cart', '30', '30', '', '#000')
+  .donate__container
+    nav.tabs__footer-items(data-tabs)
+      button.tabs__footer-link Выживание
+      button.tabs__footer-link Один Блок
+      button.tabs__footer-link БедВарс
     .donate__title-block 
       .o-block.donate__block 
       h2.donate__title Покупка валюты и кейсов
-    .donate__items.goods__items(id='tab-footer-4')
-      .goods__item 
-        .goods__item-coin 
-          img(src="img/coin.webp", alt="Монетка")
-        .goods__item-content 
-          .goods__item-title Покупка игровой валюты
-          .goods__item-subtitle Количество рублей
-          .goods__range-block 
-            input.goods__range(type="range", min='1', max='100', value='50', steps='1')
-          .goods__item-calc 
-            .goods__item-take 
-              |Отдаете:
-              br
-              span(id='rangeValue') 50
-              |₽
-            .goods__item-give 
-              |Получаете:
-              br
-              span(id='rangeValue8') 400
-              |₽
-        a.donate__item.goods__item-btn(data-path="donate")
-          |Приобрести
-          .goods__item-btn-block 
-            +svg('arrow-right', '30', '30')
-    .donate__items(id='tab-footer-5')
-    .donate__items(id='tab-footer-6')
+    .donate__wrapper(data-panes)
+      .donate__items.goods__items
+        .goods__item 
+          .goods__item-coin 
+            img(src="img/coin.webp", alt="Монетка")
+          .goods__item-content 
+            .goods__item-title Покупка игровой валюты
+            .goods__item-subtitle Количество рублей
+            .goods__range-block 
+              input.goods__range(type="range", min='1', max='100', value='50', steps='1')
+            .goods__item-calc 
+              .goods__item-take 
+                |Отдаете:
+                br
+                span(id='rangeValue') 50
+                |₽
+              .goods__item-give 
+                |Получаете:
+                br
+                span(id='rangeValue8') 400
+                |₽
+          a.donate__item.goods__item-btn(data-path="donate")
+            |Приобрести
+            .goods__item-btn-block 
+              +svg('arrow-right', '30', '30')
+      .donate__items.goods__items
+        .goods__item 
+          .goods__item-coin 
+            img(src="img/coin.webp", alt="Монетка")
+          .goods__item-content 
+            .goods__item-title Покупка игровой валюты
+            .goods__item-subtitle Количество рублей
+            .goods__range-block 
+              input.goods__range(type="range", min='1', max='100', value='50', steps='1')
+            .goods__item-calc 
+              .goods__item-take 
+                |Отдаете:
+                br
+                span(id='rangeValue') 50
+                |₽
+              .goods__item-give 
+                |Получаете:
+                br
+                span(id='rangeValue8') 400
+                |₽
+          a.donate__item.goods__item-btn(data-path="donate")
+            |Приобрести
+            .goods__item-btn-block 
+              +svg('arrow-right', '30', '30')
+      .donate__items.goods__items
+        .goods__item 
+          .goods__item-coin 
+            img(src="img/coin.webp", alt="Монетка")
+          .goods__item-content 
+            .goods__item-title Покупка игровой валюты
+            .goods__item-subtitle Количество рублей
+            .goods__range-block 
+              input.goods__range(type="range", min='1', max='100', value='50', steps='1')
+            .goods__item-calc 
+              .goods__item-take 
+                |Отдаете:
+                br
+                span(id='rangeValue') 50
+                |₽
+              .goods__item-give 
+                |Получаете:
+                br
+                span(id='rangeValue8') 400
+                |₽
+          a.donate__item.goods__item-btn(data-path="donate")
+            |Приобрести
+            .goods__item-btn-block 
+              +svg('arrow-right', '30', '30')

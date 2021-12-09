@@ -21,6 +21,9 @@
     position: relative;
     flex-basis: 40%;
     z-index: 1;
+    &>img{
+      margin: 0 auto;
+    }
     &>.mask-man{
       top: -200px;
       z-index: -2;

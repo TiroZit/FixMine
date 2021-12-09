@@ -58,7 +58,8 @@
     display: block;
     font-size: rem(18);
     padding: 20px;
-    &.active{
+    transition: all .3s;
+    &[aria-selected="true"]{
       color: var(--white);
       border-radius: var(--bradius);
       background-color: var(--orange);
@@ -89,7 +90,9 @@
   &__footer-link {
     padding: 5px 0;
     border-bottom: 3px solid transparent;
-    &.active{
+    transition: all .3s;
+    font-size: rem(16);
+    &[aria-selected="true"]{
       border-bottom: 3px solid var(--orange);
     }
   }
