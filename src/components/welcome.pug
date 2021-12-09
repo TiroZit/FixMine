@@ -13,7 +13,7 @@ section.welcome
         span 1000
       .welcome__ip
         |Наш IP: 
-        span(id='ip') mc.FixMine.ru
-      button.welcome__btn 
-        |Начать игру
+        span(class='ip', id='ip') mc.FixMine.ru
+      a.welcome__btn(href='shop.index')
+        |Магазин
         +svg('arrow-right', '30', '30')
