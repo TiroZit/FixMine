@@ -1,0 +1,28 @@
+.modal
+  .modal__body(data-target="auth")
+    .modal__content 
+      button.modal-close
+        +svg('close', '25', '20', 'currentColor')
+      form.modal__form(action="#")
+        .modal__title
+          |Авторизация 
+        fieldset.modal__fieldset
+          input.modal__input(name="login" type="text" placeholder="Логин" required)
+          input.modal__input(name="password" type="password" placeholder="Пароль" required)
+          span.modal__title-check(style='color: #1ef45f;') Успешная авторизация!
+        button.modal__btn(type="submit") Войти в аккаунт
+  .modal__body(data-target="donate")
+    .modal__content 
+      button.modal-close
+        +svg('close', '25', '20', 'currentColor')
+      form.modal__form(action="#")
+        .modal__title
+          |Оплата товара 
+          br
+          |"
+          span Helper
+          |"
+        fieldset.modal__fieldset
+          input.modal__input(name="nickname" type="text" placeholder="Никнейм" required)
+          input.modal__input(name="promo" type="text" placeholder="Промокод")
+        button.modal__btn(type="submit") Оплатить

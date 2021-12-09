@@ -41,9 +41,11 @@
   &__lk{
     display: flex;
     align-items: center;
+    font-size: rem(20);
     border: 1px solid var(--white);
     padding: 20px;
     background-color: var(--black);
+    transition: all .3s;
     &:hover{
       color: var(--orange);
       border: 1px solid var(--orange);

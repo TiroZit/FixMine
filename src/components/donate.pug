@@ -11,7 +11,7 @@ section.donate(id='tab-header-1')
       .o-block.donate__block 
       h2.donate__title Покупка привилегий
     .donate__items(id='tab-footer-1')
-      a.donate__item(href='#popup-donate')
+      a.donate__item(data-path="donate") 
         .donate__item-price 1000₽
         .donate__item-content 
           .donate__item-image 
@@ -19,7 +19,7 @@ section.donate(id='tab-header-1')
             .donate__item-title Helper 
           .donate__item-cart 
             +svg('cart', '30', '30', '', '#000')
-      a.donate__item(href='#popup-donate')
+      a.donate__item(data-path="donate") 
         .donate__item-price 1000₽
         .donate__item-content 
           .donate__item-image 
@@ -27,7 +27,7 @@ section.donate(id='tab-header-1')
             .donate__item-title Helper 
           .donate__item-cart 
             +svg('cart', '30', '30', '', '#000')
-      a.donate__item(href='#popup-donate')
+      a.donate__item(data-path="donate") 
         .donate__item-price 1000₽
         .donate__item-content 
           .donate__item-image 
@@ -93,7 +93,7 @@ section.donate(id='tab-header-2')
               br
               span(id='rangeValue8') 400
               |₽
-        a.donate__item.goods__item-btn(href='#popup-donate') 
+        a.donate__item.goods__item-btn(data-path="donate")
           |Приобрести
           .goods__item-btn-block 
             +svg('arrow-right', '30', '30')
