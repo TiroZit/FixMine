@@ -49,9 +49,9 @@
       animation: icon_donate 1.4s cubic-bezier(0.165, 0.84, 0.44, 1) infinite;
     }
     @keyframes icon_donate {
-      0%   { top: 0px; }
-      50%  { top: 10px; }
-      100% { top: 5px; }
+      0%   { top: 2px; }
+      50%   { top: 13px; }
+      100% { top: 2px; }
     }
   }
 }
