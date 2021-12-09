@@ -35,4 +35,23 @@
       color: var(--orange);
     }
   }
+  &__btn{
+    margin-top: 20px;
+    position: relative;
+    font-size: rem(24);
+    background-color: var(--orange);
+    padding: 10px 50px;
+    border-radius: 0 var(--bradius) var(--bradius) var(--bradius);
+    &>.arrow-right{
+      position: absolute;
+      right: 5px;
+      transform: rotate(-90deg);
+      animation: icon_donate 1.4s cubic-bezier(0.165, 0.84, 0.44, 1) infinite;
+    }
+    @keyframes icon_donate {
+      0%   { top: 0px; }
+      50%  { top: 10px; }
+      100% { top: 5px; }
+    }
+  }
 }
