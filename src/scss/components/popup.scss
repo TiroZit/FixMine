@@ -21,10 +21,7 @@
   }
   &__body{
     position: relative;
-    vertical-align: middle;
     cursor: default;
-    width: fit-content;
-    margin: 0 auto;
     display: none;
     padding: 30px 10px;
   }
@@ -34,6 +31,9 @@
   &.is-open{
     opacity: 1;
     visibility: visible;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     transition: opacity var(--transition-time), visibility var(--transition-time);
   }
   
