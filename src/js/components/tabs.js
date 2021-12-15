@@ -246,3 +246,14 @@ function tabbis(options = {}) {
 	const tabs = new tabbisClass();
 	tabs.init(options);
 }
+
+tabbis({
+  keyboardNavigation: true,
+  memory: false,
+  paneGroup: '[data-panes]',
+  prefix: '',
+  tabActive: '[data-active]',
+  tabActiveFallback: 0,
+  tabGroup: '[data-tabs]',
+  trigger: 'click'
+});
