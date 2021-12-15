@@ -149,6 +149,7 @@ class tabbisClass {
 
 	// Add tabpanel attributes
 	addPaneAttributes(tab, pane) {
+    console.log(tab);
 		pane.setAttribute('role', 'tabpanel');
 		pane.setAttribute('aria-labelledby', tab.getAttribute('id'));
 		pane.setAttribute('id', tab.getAttribute('aria-controls'));
@@ -183,6 +184,7 @@ class tabbisClass {
 
 	// Remove tab attributes
 	resetTabs(tabs) {
+    console.log(tabs);
 		tabs.forEach((el) => el.setAttribute('aria-selected', 'false'));
 		this.resetTabindex(tabs);
 	}
