@@ -1,10 +1,66 @@
 section.tabs 
   .tabs__container 
-    .tabs__header 
-      .tabs__title-block 
-        .tabs__cart-block 
-          +svg('cart', '30', '30', '', 'currentColor')
-        h1.tabs__title Магазин товаров
-      nav.tabs__header-items(data-tabs)
-        button.tabs__header-link Привилегии
-        button.tabs__header-link Товары
+    .tabs__title-block 
+      .tabs__cart-block 
+        +svg('cart', '30', '30', '', 'currentColor')
+      h1.tabs__title Магазин товаров
+    .tab1
+      nav.tab__header.tabs__header-items(data-child="false")
+        button.tab__header-1.tabs__header-link.active Привилегии
+        button.tab__header-2.tabs__header-link Товары
+      .tab__content.tab__content1
+        .tab__content-1.active 
+          .donate__title-block 
+            .o-block.donate__block 
+            h2.donate__title Покупка привилегий
+          .tab 
+            nav.tab__header.tabs__footer-items(data-child="true")
+              button.tab__header-1.tabs__footer-link.active Выживание
+              button.tab__header-2.tabs__footer-link Один Блок
+            .tab__content
+              .tab__content-1.donate__items.active
+                a.donate__item(data-path="donate") 
+                  .donate__item-price 1₽
+                  .donate__item-content 
+                    .donate__item-image 
+                      img(src="img/donate/helper.webp", alt="Helper")
+                      .donate__item-title Helper1 
+                    .donate__item-cart 
+                      +svg('cart', '30', '30', '', '#000')
+              .tab__content-2.donate__items
+                a.donate__item(data-path="donate") 
+                  .donate__item-price 10₽
+                  .donate__item-content 
+                    .donate__item-image 
+                      img(src="img/donate/helper.webp", alt="Helper")
+                      .donate__item-title Helper2 
+                    .donate__item-cart 
+                      +svg('cart', '30', '30', '', '#000')
+        .tab__content-2 
+          .donate__title-block 
+            .o-block.donate__block 
+            h2.donate__title Покупка товаров
+          .tab 
+            nav.tab__header.tabs__footer-items(data-child="true")
+              button.tab__header-1.tabs__footer-link.active Выживание2
+              button.tab__header-2.tabs__footer-link Один Блок2
+            .tab__content 
+              .tab__content-1.donate__items.active
+                a.donate__item(data-path="donate") 
+                  .donate__item-price 2₽
+                  .donate__item-content 
+                    .donate__item-image 
+                      img(src="img/donate/helper.webp", alt="Helper")
+                      .donate__item-title Админ 
+                    .donate__item-cart 
+                      +svg('cart', '30', '30', '', '#000')
+              .tab__content-2.donate__items
+                a.donate__item(data-path="donate") 
+                  .donate__item-price 20₽
+                  .donate__item-content 
+                    .donate__item-image 
+                      img(src="img/donate/helper.webp", alt="Helper")
+                      .donate__item-title Админ2 
+                    .donate__item-cart 
+                      +svg('cart', '30', '30', '', '#000')
+

@@ -1,28 +1,22 @@
 .tabs {
   margin-top: 50px;
+  min-height: 1000px;
   // .tabs__container
   &__container {
   }
   // .tabs__header
-  &__header {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    align-items: center;
-    gap: 20px;
-    border-radius: var(--bradius);
-    background-color: rgba($color: #212121, $alpha: 0.5);
-    padding: 20px;
-    @media(max-width: 767px){
-      justify-content: center;
-      padding: 20px 10px;
-    }
-  }
   // .tabs__title-block
   &__title-block {
+    position: absolute;
+    top: 20px;
+    left: 30px;
     display: flex;
     align-items: center;
     flex-basis: 275px;
+    margin-bottom: 50px;
+    @media(max-width: 767px){
+      display: none;
+    }
   }
   // .tabs__cart-block
   &__cart-block {
@@ -60,7 +54,7 @@
     padding: 20px;
     transition: all .3s;
     background: transparent;
-    &[aria-selected="true"]{
+    &.active{
       color: var(--white);
       border-radius: var(--bradius);
       background-color: var(--orange);
@@ -96,8 +90,22 @@
     font-size: rem(16);
     background: transparent;
     width: max-content;
-    &[aria-selected="true"]{
+    &.active{
       border-bottom: 3px solid var(--orange);
     }
+  }
+}
+.tab1 {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-end;
+  align-items: center;
+  gap: 20px;
+  border-radius: var(--bradius);
+  background-color: rgba($color: #212121, $alpha: 0.5);
+  padding: 20px;
+  @media(max-width: 767px){
+    justify-content: center;
+    padding: 20px 10px;
   }
 }
